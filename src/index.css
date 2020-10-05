@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(images/homeBG.png);
+  background-position: top;
+  background-size: initial;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.9);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
 }

@@ -1,0 +1,27 @@
+.event-card {
+    border-radius: 10px;
+}
+
+.event-card-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-card-footer {
+    padding: 20px;
+    background: #3F90FC;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-card-title {
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}

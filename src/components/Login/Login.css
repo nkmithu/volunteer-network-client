@@ -1,0 +1,38 @@
+.login-form-card {
+    width: 570px;
+    height: 457px;
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form-card article {
+    text-align: center;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 457px;
+    height: 51px;
+
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    border-radius: 57px;
+    cursor: pointer;
+}
+
+.login-btn img {
+    margin-right: 50px;
+}
+
+.login-form-card a {
+    color: #3F90FC;
+}

@@ -1,0 +1,12 @@
+.admin-container{
+    height: 100vh;
+    display: flex;
+}
+.admin-container section{
+    height: 100%;
+}
+.admin-content{
+    padding: 0 30px;
+    flex-grow: 1;
+    background: #E5E5E5
+}

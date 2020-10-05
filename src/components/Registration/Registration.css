@@ -1,0 +1,21 @@
+.registration-card{
+    padding: 50px;
+}
+.registration-card form input, .registration-card form input:focus{
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 20px 0;
+    padding: 10px;
+}
+.reg-btn{
+    width: 100%;
+    background: #3F90FC;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #3F90FC;
+    border-radius: 6px;
+    margin-top: 30px;
+}

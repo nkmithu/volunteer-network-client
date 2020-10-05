@@ -1,0 +1,32 @@
+.admin-sidebar {
+    width: 250px;
+    background: #fff;
+    height: 100%;
+}
+
+.admin-sidebar .logo {
+    margin-top: 30px;
+}
+
+.admin-menus {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.admin-menus a {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+.admin-menus a:visited{
+    color: #207FEE;
+}

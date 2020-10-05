@@ -1,0 +1,27 @@
+.heading-container {
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+}
+
+.search-container {
+    width: 470px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.search-container input {
+    padding: 15px;
+}
+
+.search-container input[type=submit] {
+    background: #3F90FC;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #3F90FC;
+}
+.Events-container{
+    margin-top: 50px;
+}
