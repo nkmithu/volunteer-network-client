@@ -26,11 +26,11 @@ function App() {
                     <Route path="/login">
                         <Login/>
                     </Route>
-                    <Route path="/registration">
-                        <Registration/>
-                    </Route>
                     <PrivateRoute path="/userEvents">
-                    <UserAllEvents/>
+                        <UserAllEvents/>
+                    </PrivateRoute>
+                    <PrivateRoute path="/registration/:title">
+                    <Registration/>
                     </PrivateRoute>
                     <Route path="/adHome">
                         <AdminHome/>
