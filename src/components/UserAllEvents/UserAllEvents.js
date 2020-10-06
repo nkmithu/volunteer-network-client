@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { UserContext } from '../../App';
 import Header from '../Header/Header';
 import UserEventCard from '../UserEventCard/UserEventCard';
 import './UserAllEvents.css'
 const UserAllEvents = () => {
+    const [loggedInUser,
+        setLoggedInUser] = useContext(UserContext);
+    const [users, setUsers] = useState([]);
+        
+    useEffect(()=>{
+            fetch("http://localhost:5000/users?email="+loggedInUser.email)
+            .then(res=>res.json())
+            .then(data => setUsers(data));
+            
+        }, [])
+
     return (
+        
         <div>
             <div className="overlay"></div>
             <Header/>
             <div className="user-events-row">
-                <UserEventCard/>
-                <UserEventCard/>
-                <UserEventCard/>
-                <UserEventCard/>
+                {
+                    users.map(user=><UserEventCard key={user._id} user ={user}></UserEventCard>)
+                }
             </div>
         </div>
 

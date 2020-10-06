@@ -32,7 +32,7 @@ function App() {
                     <PrivateRoute path="/registration/:title">
                     <Registration/>
                     </PrivateRoute>
-                    <Route path="/adHome">
+                    <Route path="/adHome/addEvents">
                         <AdminHome/>
                     </Route>
                 </Switch>

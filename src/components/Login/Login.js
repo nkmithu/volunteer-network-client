@@ -44,6 +44,7 @@ const Login = () => {
                 setLoggedInUser(signedInUser);
                 history.replace(from);
                 // ...
+
             })
             .catch(function (error) {
                 // Handle Errors here.

@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(images/homeBG.png);
   background-position: top;
-  background-size: initial;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }

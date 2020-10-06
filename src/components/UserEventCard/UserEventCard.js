@@ -1,16 +1,38 @@
 import React from 'react';
 import './UserEventCard.css';
 
-const UserEventCard = () => {
+const UserEventCard = (props) => {
+    const {eventName, date, _id} = props.user;
+
+    const handleDeleteUser=(e,id)=>{
+        console.log('Clicked');
+        e.preventDefault();
+        fetch(`http://localhost:5000/delete/${id}`, {
+            method: 'DELETE'
+        })
+        .then(res => res.json())
+        .then(result => {
+            if(result){
+                console.log(result);
+                alert('item Deleted');
+                windowReload();
+            }
+        })
+
+    }
+    const windowReload=()=>{
+        window.location.reload()
+    }
     return (
         <div className="user-event-card">
             <img src={require('../../images/ITHelp.png')} alt="" className="user-event-img"/>
            
+
             <article>
-                <h4>Humanity More</h4>
-                <p>29 sep, 2020</p>
+                <h4>{eventName}</h4>
+                <p>{date}</p>
             </article>
-            <button className="cancel-btn"> Cancel</button>
+            <button onClick={(e)=>handleDeleteUser(e, _id)} className="cancel-btn"> Cancel</button>
         </div>
     );
 };
