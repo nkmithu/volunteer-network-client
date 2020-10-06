@@ -24,7 +24,7 @@ const AddEvents = () => {
         const newEvent = {
             ...event
         };
-        fetch('http://localhost:5000/addEvent', {
+        fetch('https://warm-badlands-90781.herokuapp.com/addEvent', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

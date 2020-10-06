@@ -24,7 +24,7 @@ const Header = () => {
                 </ul>
                 { loggedInUser.email ? <h5> {loggedInUser.name} </h5> : <div className="header-btns">
                     <Link className="register-btn" to="/registration">Register</Link>
-                    <Link className="admin-btn" to="/adHome">Admin</Link>
+                    <Link className="admin-btn" to="/adHome/addEvents">Admin</Link>
                 </div>
 
                 }

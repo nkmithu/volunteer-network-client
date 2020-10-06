@@ -9,11 +9,11 @@ const UserAllEvents = () => {
     const [users, setUsers] = useState([]);
         
     useEffect(()=>{
-            fetch("http://localhost:5000/users?email="+loggedInUser.email)
+            fetch("https://warm-badlands-90781.herokuapp.com/users?email="+ loggedInUser.email)
             .then(res=>res.json())
             .then(data => setUsers(data));
             
-        }, [])
+        },[loggedInUser.email])
 
     return (
         

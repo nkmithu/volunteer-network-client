@@ -33,7 +33,7 @@ const Registration = () => {
                 ...loggedInUser,
                 ...userInfo,
             };
-            fetch('http://localhost:5000/addUser', {
+            fetch('https://warm-badlands-90781.herokuapp.com/addUser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

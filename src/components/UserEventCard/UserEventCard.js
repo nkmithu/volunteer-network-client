@@ -7,7 +7,7 @@ const UserEventCard = (props) => {
     const handleDeleteUser=(e,id)=>{
         console.log('Clicked');
         e.preventDefault();
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://warm-badlands-90781.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())
